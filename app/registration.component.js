@@ -24,7 +24,7 @@ var RegistrationComponent = (function () {
     };
     RegistrationComponent = __decorate([
         core_1.Component({
-            selector: 'my-app2',
+            selector: 'my-app',
             templateUrl: 'registration.html',
             directives: [forms_1.FORM_DIRECTIVES, forms_1.REACTIVE_FORM_DIRECTIVES]
         }), 

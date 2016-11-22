@@ -13,8 +13,10 @@ var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
 var router_1 = require('@angular/router');
 var app_component_1 = require('./app.component');
-var registration_component_1 = require('./registration.component'); /**<calling registration component method from registration.component.ts>*/
+var login_component_1 = require('./login.component');
+var registration_component_1 = require('./registration.component');
 var appRoutes = [
+    { path: 'login', component: login_component_1.loginComponent },
     { path: 'register', component: registration_component_1.RegistrationComponent },
 ];
 var AppModule = (function () {
@@ -28,7 +30,7 @@ var AppModule = (function () {
                 forms_1.FormsModule,
                 forms_1.ReactiveFormsModule
             ],
-            declarations: [app_component_1.AppComponent, registration_component_1.RegistrationComponent],
+            declarations: [app_component_1.AppComponent, registration_component_1.RegistrationComponent, login_component_1.loginComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

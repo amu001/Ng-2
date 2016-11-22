@@ -4,10 +4,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent }   from './app.component';
-import { RegistrationComponent}   from './registration.component'; /**<calling registration component method from registration.component.ts>*/
-import { routing } from './app.routes';
+
+import { loginComponent }   from './login.component';
+import { RegistrationComponent}   from './registration.component';
 
 const appRoutes: Routes = [
+{ path: 'login', component: loginComponent },
   { path: 'register', component: RegistrationComponent },
 ];
 
@@ -19,7 +21,7 @@ const appRoutes: Routes = [
         FormsModule,
         ReactiveFormsModule
     ],
-  declarations: [ AppComponent,RegistrationComponent ],
+  declarations: [ AppComponent,RegistrationComponent,loginComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

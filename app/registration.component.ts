@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {FORM_DIRECTIVES, REACTIVE_FORM_DIRECTIVES} from '@angular/forms';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 @Component({
-  selector: 'my-app2',
+  selector: 'my-app',
   templateUrl: 'registration.html',
   directives: [FORM_DIRECTIVES, REACTIVE_FORM_DIRECTIVES]
 })
