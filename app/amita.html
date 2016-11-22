@@ -2,5 +2,6 @@
     <input [formControl]="loginForm.controls['email']" formControlName="email" type="email" placeholder="Your email" required>
     <input [formControl]="loginForm.controls['password']" formControlName="password" type="password" placeholder="Your password" required>
   <button type="submit">Log in</button>
-  <button type="submit" ><a href="registration.html">Register</a></button>
+  <button type="submit" ><a  routerLink="/register">Register</a></button>
+      <router-outlet></router-outlet>
 </form>

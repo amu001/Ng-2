@@ -4,7 +4,11 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 @Component({
   selector: 'my-app',
   templateUrl: 'amita.html',
-  directives: [FORM_DIRECTIVES, REACTIVE_FORM_DIRECTIVES]
+  directives: [FORM_DIRECTIVES, REACTIVE_FORM_DIRECTIVES],
+  exports: [
+        FORM_DIRECTIVES,
+        REACTIVE_FORM_DIRECTIVES
+    ],
 })
 export class AppComponent {
 	loginForm: FormGroup;

@@ -8,9 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var forms_1 = require("@angular/forms");
-var forms_2 = require("@angular/forms");
+var core_1 = require('@angular/core');
+var forms_1 = require('@angular/forms');
+var forms_2 = require('@angular/forms');
 var RegistrationComponent = (function () {
     function RegistrationComponent(fb) {
         this.RegForm = fb.group({
@@ -22,15 +22,15 @@ var RegistrationComponent = (function () {
         console.log(event);
         event.preventDefault();
     };
+    RegistrationComponent = __decorate([
+        core_1.Component({
+            selector: 'my-app2',
+            templateUrl: 'registration.html',
+            directives: [forms_1.FORM_DIRECTIVES, forms_1.REACTIVE_FORM_DIRECTIVES]
+        }), 
+        __metadata('design:paramtypes', [forms_2.FormBuilder])
+    ], RegistrationComponent);
     return RegistrationComponent;
 }());
-RegistrationComponent = __decorate([
-    core_1.Component({
-        selector: 'my-app1',
-        templateUrl: 'registration.html',
-        directives: [forms_1.FORM_DIRECTIVES, forms_1.REACTIVE_FORM_DIRECTIVES]
-    }),
-    __metadata("design:paramtypes", [forms_2.FormBuilder])
-], RegistrationComponent);
 exports.RegistrationComponent = RegistrationComponent;
 //# sourceMappingURL=registration.component.js.map
