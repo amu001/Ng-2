@@ -1,0 +1,8 @@
+<form [formGroup]="RegForm" (ngSubmit)="doReg($event)">
+    <input [formControl]="RegForm.controls['Fname']" formControlName="fname" type="text" placeholder="Your First Name" required>
+    <input [formControl]="RegForm.controls['Lname']" formControlName="Lname" type="text" placeholder="Your Last Name" required>
+    <input [formControl]="RegForm.controls['email']" formControlName="email" type="email" placeholder="Your email" required>
+    <input [formControl]="RegForm.controls['PNumber']" formControlName="Pnumber" type="Number" placeholder="Your Mobile Number" required>
+    <input [formControl]="RegForm.controls['password']" formControlName="password" type="password" placeholder="Your password" required>
+  <button type="button">Register</button>
+</form>

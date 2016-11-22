@@ -1,0 +1,6 @@
+<form [formGroup]="loginForm" (ngSubmit)="doLogin($event)">
+    <input [formControl]="loginForm.controls['email']" formControlName="email" type="email" placeholder="Your email" required>
+    <input [formControl]="loginForm.controls['password']" formControlName="password" type="password" placeholder="Your password" required>
+  <button type="submit">Log in</button>
+  <button type="submit" ><a href="registration.html">Register</a></button>
+</form>
