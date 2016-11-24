@@ -10,29 +10,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var forms_1 = require("@angular/forms");
-var forms_2 = require("@angular/forms");
-var header_component_1 = require("./header.component");
-var RegistrationComponent = (function () {
-    function RegistrationComponent(fb) {
-        this.RegForm = fb.group({
-            email: ["email", forms_2.Validators.required],
-            password: ["password", forms_2.Validators.required]
-        });
+var RegSuccessComponent = (function () {
+    function RegSuccessComponent() {
     }
-    RegistrationComponent.prototype.doReg = function (event) {
-        console.log(event);
-        event.preventDefault();
-    };
-    return RegistrationComponent;
+    return RegSuccessComponent;
 }());
-RegistrationComponent = __decorate([
+RegSuccessComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        templateUrl: 'registration.html',
         directives: [forms_1.FORM_DIRECTIVES, forms_1.REACTIVE_FORM_DIRECTIVES],
-        declarations: [header_component_1.headerComponent]
+        templateUrl: 'successreg.html',
+        exports: [
+            forms_1.FORM_DIRECTIVES,
+            forms_1.REACTIVE_FORM_DIRECTIVES
+        ],
     }),
-    __metadata("design:paramtypes", [forms_2.FormBuilder])
-], RegistrationComponent);
-exports.RegistrationComponent = RegistrationComponent;
-//# sourceMappingURL=registration.component.js.map
+    __metadata("design:paramtypes", [])
+], RegSuccessComponent);
+exports.RegSuccessComponent = RegSuccessComponent;
+//# sourceMappingURL=registrationSuccess.component.js.map

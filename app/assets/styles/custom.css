@@ -1,0 +1,20 @@
+.logintemplate1 div {
+	
+	padding:10px !important;
+}
+
+.reg{
+	margin: auto;
+}
+.reg button{
+padding: 8px;
+}
+
+#login a {
+color:#fff;
+}
+
+#registration a{
+
+	color:#fff;
+}

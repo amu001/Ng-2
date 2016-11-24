@@ -9,23 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var forms_1 = require("@angular/forms");
-var AppComponent = (function () {
-    function AppComponent() {
+var headerComponent = (function () {
+    function headerComponent() {
     }
-    return AppComponent;
+    return headerComponent;
 }());
-AppComponent = __decorate([
+headerComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: '<a  routerLink="/register">Register</a><router-outlet></router-outlet>',
-        directives: [forms_1.FORM_DIRECTIVES, forms_1.REACTIVE_FORM_DIRECTIVES],
-        exports: [
-            forms_1.FORM_DIRECTIVES,
-            forms_1.REACTIVE_FORM_DIRECTIVES
-        ],
+        templateUrl: 'header.html'
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], headerComponent);
+exports.headerComponent = headerComponent;
+//# sourceMappingURL=header.component.js.map

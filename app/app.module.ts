@@ -7,10 +7,13 @@ import { AppComponent }   from './app.component';
 
 import { loginComponent }   from './login.component';
 import { RegistrationComponent}   from './registration.component';
+import { RegSuccessComponent}   from './registrationSuccess.component';
 
-const appRoutes: Routes = [
+
+const appRoutes: Routes = [                      /**<declaring app route variables and then giving path of each components >*/
 { path: 'login', component: loginComponent },
   { path: 'register', component: RegistrationComponent },
+    { path: 'regsuccess', component: RegSuccessComponent },
 ];
 
 
@@ -21,7 +24,8 @@ const appRoutes: Routes = [
         FormsModule,
         ReactiveFormsModule
     ],
-  declarations: [ AppComponent,RegistrationComponent,loginComponent ],
+  declarations: [ AppComponent,RegistrationComponent,loginComponent,RegSuccessComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
+
