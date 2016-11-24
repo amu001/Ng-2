@@ -1,0 +1,4 @@
+Naming convention
+<filename.component.ts>n
+
+enospc - end of space
