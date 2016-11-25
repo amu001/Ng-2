@@ -8,24 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var forms_1 = require("@angular/forms");
-var RegSuccessComponent = (function () {
-    function RegSuccessComponent() {
+var core_1 = require('@angular/core');
+var headerComponent = (function () {
+    function headerComponent() {
     }
-    return RegSuccessComponent;
+    headerComponent = __decorate([
+        core_1.Component({
+            selector: 'my-app',
+            templateUrl: '/views/header.html'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], headerComponent);
+    return headerComponent;
 }());
-RegSuccessComponent = __decorate([
-    core_1.Component({
-        selector: 'my-app',
-        directives: [forms_1.FORM_DIRECTIVES, forms_1.REACTIVE_FORM_DIRECTIVES],
-        templateUrl: 'successreg.html',
-        exports: [
-            forms_1.FORM_DIRECTIVES,
-            forms_1.REACTIVE_FORM_DIRECTIVES
-        ],
-    }),
-    __metadata("design:paramtypes", [])
-], RegSuccessComponent);
-exports.RegSuccessComponent = RegSuccessComponent;
-//# sourceMappingURL=registrationSuccess.component.js.map
+exports.headerComponent = headerComponent;
+//# sourceMappingURL=header.component.js.map

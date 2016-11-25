@@ -4,7 +4,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {headerComponent} from './header.component';
 @Component({
   selector: 'my-app',
-  templateUrl: 'registration.html',
+  templateUrl: '/views/registration.html',
   directives: [FORM_DIRECTIVES, REACTIVE_FORM_DIRECTIVES],
   declarations: [ headerComponent ]
 })

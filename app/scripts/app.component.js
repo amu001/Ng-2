@@ -10,27 +10,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var forms_1 = require('@angular/forms');
-var forms_2 = require('@angular/forms');
 var AppComponent = (function () {
-    function AppComponent(fb) {
-        this.loginForm = fb.group({
-            email: ["email", forms_2.Validators.required],
-            password: ["password", forms_2.Validators.required]
-        });
+    function AppComponent() {
     }
-    AppComponent.prototype.doLogin = function (event) {
-        console.log(this.loginForm.value);
-        event.preventDefault();
-    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            templateUrl: 'amita.html',
-            directives: [forms_1.FORM_DIRECTIVES, forms_1.REACTIVE_FORM_DIRECTIVES]
+            template: '<a  routerLink="/register">Register</a><router-outlet></router-outlet>',
+            directives: [forms_1.FORM_DIRECTIVES, forms_1.REACTIVE_FORM_DIRECTIVES],
+            exports: [
+                forms_1.FORM_DIRECTIVES,
+                forms_1.REACTIVE_FORM_DIRECTIVES
+            ],
         }), 
-        __metadata('design:paramtypes', [forms_2.FormBuilder])
+        __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.registrationcomponent.js.map
+//# sourceMappingURL=app.component.js.map

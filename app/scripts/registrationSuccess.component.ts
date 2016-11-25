@@ -4,7 +4,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 @Component({
   selector: 'my-app',
   directives: [FORM_DIRECTIVES, REACTIVE_FORM_DIRECTIVES],
-  templateUrl:'successreg.html',
+  templateUrl:'/views/successreg.html',
   exports: [
         FORM_DIRECTIVES,
         REACTIVE_FORM_DIRECTIVES
